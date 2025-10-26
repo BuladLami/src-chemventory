@@ -1,0 +1,36 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* App base overrides (minimal custom styles) */
+body {
+	background-color: #f8fafc;
+	color: #0f1724;
+}
+
+.app-shell {
+	min-height: 100vh;
+	padding: 1.5rem;
+	max-width: 80rem;
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+	.app-shell { grid-template-columns: 220px 1fr; }
+}
+
+.sidebar {
+	background: #0f1724;
+	color: white;
+	padding: 1rem;
+	border-radius: 0.5rem;
+}
+
+.page {
+	background: white;
+	padding: 1.5rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
